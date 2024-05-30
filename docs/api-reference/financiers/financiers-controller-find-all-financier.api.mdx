@@ -1,0 +1,38 @@
+---
+id: financiers-controller-find-all-financier
+title: "FinanciersController_findAllFinancier"
+description: "FinanciersController_findAllFinancier"
+sidebar_label: "FinanciersController_findAllFinancier"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVFGP0zAM/iuVn4MmXiuENBCHDgmBuEM8TBPyUm/LLU1yiTsxqvx35LTXdhwPwFtU25/t7/vcHnygiGy8u22ghhvj0GlDMb31jqO3luL3vXHN2topBgoCRmyJKSaoNz04bAlqSCcTQEGkx85EaqDeo02kwDioISAfQUHSR2oR6h74EqTIde2OIuSsJhzGE/0/zlYqU/AuUZJ4Q3vsLA/PpKMJsi7UAAq0d0yuxDAEa3ShYvWQJKF/3sTvHkizEBCFODZDi9RpTSktEnfeW0JXtsDmk7MXqDl2lBU0yAXyOqCeKjFGvIACw9QuERNH4w6Qc14ys5l6j8BbBWzY0iDmlW5fRlYEQ1AYDyLfQnSpTqS7aPhShMWC/YL9iRzUm62Qe03i3zqmJT56sdiBCn+iYg2r/VQuzwatXfVio7zqxQVZlKZ4Hoy2mO5OlBnIv55xFK1oQBhL7+Fx42OLDDV8+HYPE91H5iDmA+P2vtA9svfR/8TI1frzLfy+8x3Fs9FUsa9adHigqksUk6rmbVSlsQ1oDi5V6JrKEjaikWwygLwc7Yda7CcTBJ+4xbLDeAgzudXMrnRpqrW11ZLfqwkn0zD94FWwaBxkBV20Ehu438A8LSgY2QcF9XjGdTnDrYKjTyz5fb/DRF+jzVk+P3YUL4MqZ4wGd0LbpofGJHnPZ/tkbCe2PqPtaDi+E12efhpy/P9YV6bL26zgSNhQLL2H0FprCrwoenbb4uPJke/fiR+wE1bmA742T0H/40Cv3pSE6l7893oer9gxb3POvwDevdnz
+sidebar_class_name: "get api-method"
+info_path: api-reference/mozart-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>FinanciersController_findAllFinancier</h1>
+
+<MethodEndpoint method={"get"} path={"/financiers/findall/{skip}/{take}"}></MethodEndpoint>
+
+
+
+FinanciersController_findAllFinancier
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"skip","required":false,"in":"path","schema":{"type":"number"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"take","required":false,"in":"path","schema":{"type":"number"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"default"} value={"default"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"success"} required={true} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean","readOnly":true}}></SchemaItem><SchemaItem collapsible={false} name={"data"} required={true} schemaName={"string[]"} qualifierMessage={undefined} schema={{"readOnly":true,"type":"array","items":{"type":"string"}}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"success\": true,\n  \"data\": [\n    \"string\"\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

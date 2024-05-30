@@ -1,0 +1,2118 @@
+openapi: 3.0.0
+title: "Mozart API REST"
+paths:
+  /users/create:
+    post:
+      operationId: UsersController_createUser
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUserCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateUserResponse'
+      tags:
+        - Users
+      security:
+        - access-token: []
+  /users/update:
+    patch:
+      operationId: UsersController_updateUser
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUserCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateUserResponse'
+      tags:
+        - Users
+      security:
+        - access-token: []
+  /users/delete:
+    delete:
+      operationId: UsersController_deleteUser
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeleteUserCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteUserResponse'
+      tags:
+        - Users
+      security:
+        - access-token: []
+  /users/findbyid:
+    put:
+      operationId: UsersController_findUserById
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FindByIdUserCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindByIdUserResponse'
+      tags:
+        - Users
+      security:
+        - access-token: []
+  /users/findbydocument:
+    put:
+      operationId: UsersController_findUserByDocument
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FindByDocumentUserCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindByDocumentUserResponse'
+      tags:
+        - Users
+      security:
+        - access-token: []
+  /users/findall/{skip}/{take}:
+    get:
+      operationId: UsersController_findAllUser
+      parameters:
+        - name: skip
+          required: false
+          in: path
+          schema:
+            type: number
+        - name: take
+          required: false
+          in: path
+          schema:
+            type: number
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindAllUserResponse'
+      tags:
+        - Users
+      security:
+        - access-token: []
+  /financiers/create:
+    post:
+      operationId: FinanciersController_createFinancier
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateFinancierCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateFinancierResponse'
+      tags:
+        - Financiers
+      security:
+        - access-token: []
+  /financiers/update:
+    patch:
+      operationId: FinanciersController_updateFinancier
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateFinancierCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateFinancierResponse'
+      tags:
+        - Financiers
+      security:
+        - access-token: []
+  /financiers/delete:
+    delete:
+      operationId: FinanciersController_deleteFinancier
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeleteFinancierCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteFinancierResponse'
+      tags:
+        - Financiers
+      security:
+        - access-token: []
+  /financiers/findbyid:
+    put:
+      operationId: FinanciersController_findFinancierById
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FindByIdFinancierCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindByIdFinancierResponse'
+      tags:
+        - Financiers
+      security:
+        - access-token: []
+  /financiers/findall/{skip}/{take}:
+    get:
+      operationId: FinanciersController_findAllFinancier
+      parameters:
+        - name: skip
+          required: false
+          in: path
+          schema:
+            type: number
+        - name: take
+          required: false
+          in: path
+          schema:
+            type: number
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindAllFinancierResponse'
+      tags:
+        - Financiers
+      security:
+        - access-token: []
+  /campaigns/create:
+    post:
+      operationId: CampaignsController_createCampaign
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateCampaignCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateCampaignResponse'
+      tags:
+        - Campaigns
+      security:
+        - access-token: []
+  /campaigns/update:
+    patch:
+      operationId: CampaignsController_updateCampaign
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateCampaignCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateCampaignResponse'
+      tags:
+        - Campaigns
+      security:
+        - access-token: []
+  /campaigns/delete:
+    delete:
+      operationId: CampaignsController_deleteCampaign
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeleteCampaignCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteCampaignResponse'
+      tags:
+        - Campaigns
+      security:
+        - access-token: []
+  /campaigns/findbyid:
+    put:
+      operationId: CampaignsController_findCampaignById
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FindByIdCampaignCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindByIdCampaignResponse'
+      tags:
+        - Campaigns
+      security:
+        - access-token: []
+  /campaigns/findall/{skip}/{take}:
+    get:
+      operationId: CampaignsController_findAllCampaign
+      parameters:
+        - name: skip
+          required: false
+          in: path
+          schema:
+            type: number
+        - name: take
+          required: false
+          in: path
+          schema:
+            type: number
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindAllCampaignResponse'
+      tags:
+        - Campaigns
+      security:
+        - access-token: []
+  /leads/create:
+    post:
+      operationId: LeadsController_createLead
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateLeadCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateLeadResponse'
+      tags:
+        - Leads
+      security:
+        - access-token: []
+  /leads/update:
+    patch:
+      operationId: LeadsController_updateLead
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateLeadCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateLeadResponse'
+      tags:
+        - Leads
+      security:
+        - access-token: []
+  /leads/delete:
+    delete:
+      operationId: LeadsController_deleteLead
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeleteLeadCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteLeadResponse'
+      tags:
+        - Leads
+      security:
+        - access-token: []
+  /leads/findbyid:
+    put:
+      operationId: LeadsController_findLeadById
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FindByIdLeadCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindByIdLeadResponse'
+      tags:
+        - Leads
+      security:
+        - access-token: []
+  /leads/findactiveleadsbyuserid:
+    put:
+      operationId: LeadsController_findActiveLeadsByUserId
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FindActiveLeadsByUserIdLeadCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindActiveLeadsByUserIdResponse'
+      tags:
+        - Leads
+      security:
+        - access-token: []
+  /leads/findallbyfinancierid:
+    put:
+      operationId: LeadsController_findAllByFinancierId
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FindAllByFinancierIdLeadCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindAllByFinancierIdLeadResponse'
+      tags:
+        - Leads
+      security:
+        - access-token: []
+  /leads/countallbyfinancierid:
+    put:
+      operationId: LeadsController_countAllByFinancierId
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CountAllByFinancierIdLeadCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CountAllByFinancierIdLeadResponse'
+      tags:
+        - Leads
+      security:
+        - access-token: []
+  /leads/findall:
+    get:
+      operationId: LeadsController_findAllLead
+      parameters:
+        - name: minDate
+          required: false
+          in: query
+          schema:
+            type: number
+        - name: maxDate
+          required: false
+          in: query
+          schema:
+            type: number
+        - name: skip
+          required: false
+          in: query
+          schema:
+            type: number
+        - name: take
+          required: false
+          in: query
+          schema:
+            type: number
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindAllLeadResponse'
+      tags:
+        - Leads
+      security:
+        - access-token: []
+  /leads/test:
+    get:
+      operationId: LeadsController_sendWhatsappMessageToPendingLeads
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      tags:
+        - Leads
+      security:
+        - access-token: []
+  /utils/sumec/getduesforcapital:
+    post:
+      operationId: UtilsController_getDuesForCapital
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GetDuesForCapitalSumecCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetDuesForCapitalSumecResponse'
+      tags:
+        - Utils
+      security:
+        - access-token: []
+  /utils/sumec/getpreapproved:
+    post:
+      operationId: UtilsController_getPreApproved
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GetPreApprovedSumecCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetPreApprovedSumecResponse'
+      tags:
+        - Utils
+      security:
+        - access-token: []
+  /utils/crediline/getClearing:
+    put:
+      operationId: UtilsController_getClearing
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GetClearingCredilineCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetClearingCredilineResponse'
+      tags:
+        - Utils
+      security:
+        - access-token: []
+  /utils/crediline/toPrezzta:
+    put:
+      operationId: UtilsController_toPrezzta
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ToPrezztaCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: boolean
+      tags:
+        - Utils
+      security:
+        - access-token: []
+  /utils/crediline/simulatePrezzta:
+    put:
+      operationId: UtilsController_simulatePrezzta
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SimulatePrezztaCommand'
+      responses:
+        '200':
+          description: ''
+      tags:
+        - Utils
+      security:
+        - access-token: []
+  /utils/calculator:
+    get:
+      operationId: UtilsController_test
+      parameters:
+        - name: tea
+          required: true
+          in: query
+          schema:
+            type: number
+        - name: tea2
+          required: true
+          in: query
+          schema:
+            type: number
+        - name: amount
+          required: true
+          in: query
+          schema:
+            type: number
+        - name: minQuotes
+          required: true
+          in: query
+          schema:
+            type: number
+        - name: maxQuotes
+          required: true
+          in: query
+          schema:
+            type: number
+        - name: quoteChange
+          required: true
+          in: query
+          schema:
+            type: number
+      responses:
+        '200':
+          description: ''
+      tags:
+        - Utils
+  /utils/getSigns:
+    get:
+      operationId: UtilsController_getSigns
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      tags:
+        - Utils
+  /managers/create:
+    post:
+      operationId: ManagersController_createManager
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateManagerCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateManagerResponse'
+      tags:
+        - Managers
+      security:
+        - access-token: []
+  /managers/update:
+    patch:
+      operationId: ManagersController_updateManager
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateManagerCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateManagerResponse'
+      tags:
+        - Managers
+      security:
+        - access-token: []
+  /managers/delete:
+    delete:
+      operationId: ManagersController_deleteManager
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeleteManagerCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteManagerResponse'
+      tags:
+        - Managers
+      security:
+        - access-token: []
+  /managers/findbyid:
+    put:
+      operationId: ManagersController_findManagerById
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FindByIdManagerCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindByIdManagerResponse'
+      tags:
+        - Managers
+      security:
+        - access-token: []
+  /managers/findall:
+    get:
+      operationId: ManagersController_findAllManager
+      parameters:
+        - name: minDate
+          required: false
+          in: query
+          schema:
+            type: number
+        - name: maxDate
+          required: false
+          in: query
+          schema:
+            type: number
+        - name: skip
+          required: false
+          in: query
+          schema:
+            type: number
+        - name: take
+          required: false
+          in: query
+          schema:
+            type: number
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindAllManagerResponse'
+      tags:
+        - Managers
+      security:
+        - access-token: []
+  /managers/findaccount:
+    get:
+      operationId: ManagersController_findByAccount
+      parameters: []
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindAccountManagerResponse'
+      tags:
+        - Managers
+      security:
+        - access-token: []
+  /managers/findallbyfinancierid:
+    put:
+      operationId: ManagersController_findAllByFinancierId
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FindAllByFinancierIdManagerCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindAllByFinancierIdManagerResponse'
+      tags:
+        - Managers
+      security:
+        - access-token: []
+  /clearings/create:
+    post:
+      operationId: ClearingsController_createClearing
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateClearingCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateClearingResponse'
+      tags:
+        - Clearings
+      security:
+        - access-token: []
+  /clearings/update:
+    patch:
+      operationId: ClearingsController_updateClearing
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateClearingCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateClearingResponse'
+      tags:
+        - Clearings
+      security:
+        - access-token: []
+  /clearings/delete:
+    delete:
+      operationId: ClearingsController_deleteClearing
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeleteClearingCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteClearingResponse'
+      tags:
+        - Clearings
+      security:
+        - access-token: []
+  /clearings/findbyid:
+    put:
+      operationId: ClearingsController_findClearingById
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FindByIdClearingCommand'
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindByIdClearingResponse'
+      tags:
+        - Clearings
+      security:
+        - access-token: []
+  /clearings/findall/{skip}/{take}:
+    get:
+      operationId: ClearingsController_findAllClearing
+      parameters:
+        - name: skip
+          required: false
+          in: path
+          schema:
+            type: number
+        - name: take
+          required: false
+          in: path
+          schema:
+            type: number
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FindAllClearingResponse'
+      tags:
+        - Clearings
+      security:
+        - access-token: []
+info:
+  title: Mozart API
+  description: Service to manage users, financiers, campaigns and leads
+  version: '1'
+  contact: {}
+tags: []
+servers: []
+components:
+  securitySchemes:
+    access-token:
+      scheme: bearer
+      bearerFormat: JWT
+      type: http
+  schemas:
+    CreateUserCommand:
+      type: object
+      properties:
+        fullName:
+          type: string
+        phone:
+          type: string
+        document:
+          type: string
+        email:
+          type: string
+        age:
+          type: string
+        laboralAge:
+          type: string
+        salary:
+          type: string
+        country:
+          type: string
+        state:
+          type: string
+        city:
+          type: string
+        address:
+          type: string
+        civilianState:
+          type: string
+        laboralState:
+          type: string
+        businessPhone:
+          type: string
+        clearingScore:
+          type: string
+        typeHome:
+          type: string
+        phoneHome:
+          type: string
+        contactPhone:
+          type: string
+        contactType:
+          type: string
+        retired:
+          type: boolean
+        origin:
+          type: array
+          items:
+            type: string
+      required:
+        - origin
+    CreateUserResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    UpdateUserCommand:
+      type: object
+      properties:
+        id:
+          type: string
+        fullName:
+          type: string
+        phone:
+          type: string
+        document:
+          type: string
+        email:
+          type: string
+        age:
+          type: string
+        laboralAge:
+          type: string
+        salary:
+          type: string
+        country:
+          type: string
+        state:
+          type: string
+        city:
+          type: string
+        address:
+          type: string
+        civilianState:
+          type: string
+        laboralState:
+          type: string
+        businessPhone:
+          type: string
+        clearingScore:
+          type: string
+        typeHome:
+          type: string
+        phoneHome:
+          type: string
+        contactPhone:
+          type: string
+        contactType:
+          type: string
+        retired:
+          type: boolean
+        origin:
+          type: array
+          items:
+            type: string
+      required:
+        - id
+        - origin
+    UpdateUserResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    DeleteUserCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    DeleteUserResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+      required:
+        - success
+    FindByIdUserCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    FindByIdUserResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    FindByDocumentUserCommand:
+      type: object
+      properties:
+        document:
+          type: string
+      required:
+        - document
+    FindByDocumentUserResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    FindAllUserResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          readOnly: true
+          type: array
+          items:
+            type: string
+      required:
+        - success
+        - data
+    CreateFinancierCommand:
+      type: object
+      properties:
+        brandName:
+          type: string
+        options:
+          type: object
+        phones:
+          type: array
+          items:
+            type: string
+        emails:
+          type: array
+          items:
+            type: string
+        country:
+          type: string
+        state:
+          type: string
+        city:
+          type: string
+        courtAddress:
+          type: string
+        bots:
+          type: array
+          items:
+            type: string
+      required:
+        - brandName
+        - options
+        - phones
+        - emails
+        - country
+        - state
+        - city
+        - courtAddress
+    CreateFinancierResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    UpdateFinancierCommand:
+      type: object
+      properties:
+        id:
+          type: string
+        brandName:
+          type: string
+        options:
+          type: object
+        phones:
+          type: array
+          items:
+            type: string
+        emails:
+          type: array
+          items:
+            type: string
+        country:
+          type: string
+        state:
+          type: string
+        city:
+          type: string
+        courtAddress:
+          type: string
+        bots:
+          type: array
+          items:
+            type: string
+      required:
+        - id
+    UpdateFinancierResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    DeleteFinancierCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    DeleteFinancierResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+      required:
+        - success
+    FindByIdFinancierCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    FindByIdFinancierResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    FindAllFinancierResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          readOnly: true
+          type: array
+          items:
+            type: string
+      required:
+        - success
+        - data
+    CreateCampaignCommand:
+      type: object
+      properties:
+        financerId:
+          type: string
+        brandName:
+          type: string
+        phone:
+          type: string
+      required:
+        - financerId
+        - brandName
+        - phone
+    CreateCampaignResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    UpdateCampaignCommand:
+      type: object
+      properties:
+        id:
+          type: string
+        financerId:
+          type: string
+        brandName:
+          type: string
+        phone:
+          type: string
+      required:
+        - id
+    UpdateCampaignResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    DeleteCampaignCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    DeleteCampaignResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+      required:
+        - success
+    FindByIdCampaignCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    FindByIdCampaignResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    FindAllCampaignResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          readOnly: true
+          type: array
+          items:
+            type: string
+      required:
+        - success
+        - data
+    CreateLeadCommand:
+      type: object
+      properties:
+        campaignId:
+          type: string
+        userId:
+          type: string
+        status:
+          type: string
+        statusBot:
+          type: string
+        amount:
+          type: string
+        finalAmount:
+          type: string
+        quotas:
+          type: string
+        quotasAmount:
+          type: string
+        clearing:
+          type: boolean
+        documentPhoto:
+          type: string
+        documentBackPhoto:
+          type: string
+        frontPhoto:
+          type: string
+        invoicePhoto:
+          type: string
+        creditStatePhotos:
+          type: array
+          items:
+            type: string
+        howFind:
+          type: string
+        reason:
+          type: string
+        reasonRejected:
+          type: string
+        comment:
+          type: string
+        waiting:
+          type: string
+        creditType:
+          type: string
+      required:
+        - campaignId
+        - userId
+    CreateLeadResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    UpdateLeadCommand:
+      type: object
+      properties:
+        id:
+          type: string
+        campaignId:
+          type: string
+        userId:
+          type: string
+        managerId:
+          type: string
+        status:
+          type: string
+        statusBot:
+          type: string
+        amount:
+          type: string
+        finalAmount:
+          type: string
+        quotas:
+          type: string
+        quotasAmount:
+          type: string
+        clearing:
+          type: boolean
+        documentPhoto:
+          type: string
+        documentBackPhoto:
+          type: string
+        frontPhoto:
+          type: string
+        invoicePhoto:
+          type: string
+        creditStatePhotos:
+          type: array
+          items:
+            type: string
+        howFind:
+          type: string
+        reason:
+          type: string
+        reasonRejected:
+          type: string
+        comment:
+          type: string
+        waiting:
+          type: string
+        creditType:
+          type: string
+      required:
+        - id
+    UpdateLeadResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    DeleteLeadCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    DeleteLeadResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+      required:
+        - success
+    FindByIdLeadCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    FindByIdLeadResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    FindActiveLeadsByUserIdLeadCommand:
+      type: object
+      properties:
+        userId:
+          type: string
+        financierId:
+          type: string
+        skip:
+          type: number
+        take:
+          type: number
+      required:
+        - userId
+    FindActiveLeadsByUserIdResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          readOnly: true
+          type: array
+          items:
+            type: string
+      required:
+        - success
+        - data
+    FindAllByFinancierIdLeadCommand:
+      type: object
+      properties:
+        financierId:
+          type: string
+        minDate:
+          type: number
+        maxDate:
+          type: number
+        skip:
+          type: number
+        take:
+          type: number
+        filter:
+          type: string
+        status:
+          type: string
+        managerId:
+          type: string
+      required:
+        - financierId
+    FindAllByFinancierIdLeadResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          readOnly: true
+          type: array
+          items:
+            type: string
+      required:
+        - success
+        - data
+    CountAllByFinancierIdLeadCommand:
+      type: object
+      properties:
+        financierId:
+          type: string
+      required:
+        - financierId
+    CountAllByFinancierIdLeadResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: number
+          readOnly: true
+      required:
+        - success
+        - data
+    FindAllLeadResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          readOnly: true
+          type: array
+          items:
+            type: string
+      required:
+        - success
+        - data
+    GetDuesForCapitalSumecCommand:
+      type: object
+      properties:
+        capital:
+          type: string
+      required:
+        - capital
+    GetDuesForCapitalSumecResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    GetPreApprovedSumecCommand:
+      type: object
+      properties:
+        ci:
+          type: string
+        age:
+          type: string
+        salary:
+          type: string
+      required:
+        - ci
+        - age
+        - salary
+    GetPreApprovedSumecResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    GetClearingCredilineCommand:
+      type: object
+      properties:
+        demo:
+          type: boolean
+        apellido1:
+          type: string
+        nombre1:
+          type: string
+        apellido2:
+          type: string
+        nombre2:
+          type: string
+        documento:
+          type: string
+        codigoDocumento:
+          type: string
+        paisDocumento:
+          type: string
+        fechaNacimiento:
+          type: string
+        sexo:
+          type: string
+        estadoCivil:
+          type: string
+        direccion:
+          type: string
+        departamento:
+          type: string
+        localidad:
+          type: string
+        telefono:
+          type: string
+        codigoPostal:
+          type: string
+        ocupacion:
+          type: string
+        empresa:
+          type: string
+        fechaIngreso:
+          type: string
+        direccionEmp:
+          type: string
+        departamentoEmp:
+          type: string
+        localidadEmp:
+          type: string
+        telefonoEmp:
+          type: string
+        codigoPostalEmp:
+          type: string
+        email:
+          type: string
+        cony_documento:
+          type: string
+        cony_apellido1:
+          type: string
+        cony_nombre1:
+          type: string
+        cony_apellido2:
+          type: string
+        cony_nombre2:
+          type: string
+        esPropietario:
+          type: string
+        moneda:
+          type: string
+        monto:
+          type: string
+        plazo:
+          type: string
+        ingreso_liquido:
+          type: string
+        cuota_maxima:
+          type: string
+      required:
+        - demo
+        - apellido1
+        - nombre1
+        - documento
+        - codigoDocumento
+        - paisDocumento
+        - fechaNacimiento
+    GetClearingCredilineResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    ToPrezztaCommand:
+      type: object
+      properties:
+        nombres:
+          type: string
+        apellidos:
+          type: string
+        telefono:
+          type: string
+        clearing_data:
+          type: string
+        estado_civil_id:
+          type: number
+        fecha_nacimiento:
+          type: string
+        fecha_ingreso:
+          type: string
+        cuota_maxima:
+          type: number
+        ingreso_mensual:
+          type: number
+        jubilado:
+          type: boolean
+        numero_documento:
+          type: string
+        monto:
+          type: number
+        cuota:
+          type: number
+        product_type_id:
+          type: number
+        relacion_laboral:
+          type: number
+        refEmpresa:
+          type: string
+        tipo_vivienda:
+          type: number
+        direccion:
+          type: object
+        telefono_fijo:
+          type: string
+        email:
+          type: string
+        estudio:
+          type: number
+        persona_contacto:
+          type: string
+        telefono_persona_contacto:
+          type: string
+        comoseentero:
+          type: number
+      required:
+        - nombres
+        - apellidos
+        - telefono
+        - clearing_data
+        - estado_civil_id
+        - fecha_nacimiento
+        - fecha_ingreso
+        - cuota_maxima
+        - ingreso_mensual
+        - jubilado
+        - numero_documento
+        - monto
+        - cuota
+        - product_type_id
+        - relacion_laboral
+        - refEmpresa
+        - tipo_vivienda
+        - direccion
+        - telefono_fijo
+        - email
+        - estudio
+        - persona_contacto
+        - telefono_persona_contacto
+        - comoseentero
+    SimulatePrezztaCommand:
+      type: object
+      properties:
+        monto:
+          type: number
+        cuotas:
+          type: number
+        product_type_id:
+          type: number
+      required:
+        - monto
+        - cuotas
+        - product_type_id
+    CreateManagerCommand:
+      type: object
+      properties:
+        fullName:
+          type: string
+        email:
+          type: string
+        financierId:
+          type: string
+        role:
+          type: string
+        avatar:
+          type: string
+      required:
+        - fullName
+        - email
+        - financierId
+        - role
+    CreateManagerResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    UpdateManagerCommand:
+      type: object
+      properties:
+        id:
+          type: string
+        fullName:
+          type: string
+        email:
+          type: string
+        financierId:
+          type: string
+        role:
+          type: string
+        avatar:
+          type: string
+      required:
+        - id
+    UpdateManagerResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    DeleteManagerCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    DeleteManagerResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+      required:
+        - success
+    FindByIdManagerCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    FindByIdManagerResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    FindAllManagerResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          readOnly: true
+          type: array
+          items:
+            type: string
+      required:
+        - success
+        - data
+    FindAccountManagerResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    FindAllByFinancierIdManagerCommand:
+      type: object
+      properties:
+        financierId:
+          type: string
+      required:
+        - financierId
+    FindAllByFinancierIdManagerResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          readOnly: true
+          type: array
+          items:
+            type: string
+      required:
+        - success
+        - data
+    CreateClearingCommand:
+      type: object
+      properties:
+        financerId:
+          type: string
+        brandName:
+          type: string
+        phone:
+          type: string
+      required:
+        - financerId
+        - brandName
+        - phone
+    CreateClearingResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    UpdateClearingCommand:
+      type: object
+      properties:
+        id:
+          type: string
+        financerId:
+          type: string
+        brandName:
+          type: string
+        phone:
+          type: string
+      required:
+        - id
+    UpdateClearingResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    DeleteClearingCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    DeleteClearingResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+      required:
+        - success
+    FindByIdClearingCommand:
+      type: object
+      properties:
+        id:
+          type: string
+      required:
+        - id
+    FindByIdClearingResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          type: object
+          readOnly: true
+      required:
+        - success
+        - data
+    FindAllClearingResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          readOnly: true
+          type: array
+          items:
+            type: string
+      required:
+        - success
+        - data

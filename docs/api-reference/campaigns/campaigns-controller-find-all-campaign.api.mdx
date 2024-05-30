@@ -1,0 +1,38 @@
+---
+id: campaigns-controller-find-all-campaign
+title: "CampaignsController_findAllCampaign"
+description: "CampaignsController_findAllCampaign"
+sidebar_label: "CampaignsController_findAllCampaign"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlFGP0zAMx79K5eegidcKIY0Thw4JgbhDPEwT8lJvyy1Ncok7Map8d+S069Y7HoC3qI4d+/f/uz34QBHZeHfXQA032AY0O5duvOPoraX4Y2tcs7T2HAIFASO2xBQT1KseHLYENaSDCaAg0lNnIjVQb9EmUmAc1BCQ96Ag6T21CHUPfAqS5Lp2QxFyVlMdxgP9f521ZKbgXaIk8Ya22FkejklHE2RYqAEUaO+YXIlhCNboAmLxmORC//IRv3kkzQIgCjY2wxOp05pSurq48d4SujIFNp+dPUHNsaOsoEEuJecBdc7EGPEECgxTe10xcTRuBznnazKr6e2x8FoBG7aScTuX7esIRUpIEcadqHdRXHIT6S4aPhVZsVR+xf5ADurVWtDOEf6dW1rivRdz7aiwEwVrWOhz8kJS0NpFLw7Ki14MkEVkisfBY1et3YsoA/d5g6NeBT9hpAhqPNz62CJDDR+/P8BEes8cxHdg3NYX0iO4T/4XRq6WX+7g+cD3FI9GU8W+atHhjqouUUyq2hqHTptyngar0DWVJWxEHplkKPJ6dB5qcZ50EHziFssM4w5MZKsLWnmkqZbWVldwZ/1NbmH6yYtg0TjICrpoJTaAX8HUHygY0YOCelzfuqzfWsHeJ5brfb/BRN+izVk+P3UUT4MkR4wGN8Js1UNjkpwv63o2tBM7H9F2NCzdgU7nn4Us/T/mle7yOivYEzYUy9tDaKk1Bb5KerHT4uDJjR/eixmwEyiXxZ07p1T/Y0Nv3pUL1YOY7+2lveLFvM45/wZ6NdWd
+sidebar_class_name: "get api-method"
+info_path: api-reference/mozart-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>CampaignsController_findAllCampaign</h1>
+
+<MethodEndpoint method={"get"} path={"/campaigns/findall/{skip}/{take}"}></MethodEndpoint>
+
+
+
+CampaignsController_findAllCampaign
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"skip","required":false,"in":"path","schema":{"type":"number"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"take","required":false,"in":"path","schema":{"type":"number"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"default"} value={"default"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"success"} required={true} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean","readOnly":true}}></SchemaItem><SchemaItem collapsible={false} name={"data"} required={true} schemaName={"string[]"} qualifierMessage={undefined} schema={{"readOnly":true,"type":"array","items":{"type":"string"}}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"success\": true,\n  \"data\": [\n    \"string\"\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

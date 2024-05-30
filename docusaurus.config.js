@@ -97,16 +97,10 @@ const config = {
         id: "openapi",
         docsPluginId: "classic",
         config: {
-          /* petstore: {
-            specPath: "examples/petstore.yaml",
-            outputDir: "docs/petstore",
-            downloadUrl:
-              "https://raw.githubusercontent.com/PaloAltoNetworks/docusaurus-template-openapi-docs/main/examples/petstore.yaml",
-            sidebarOptions: {
-              groupPathsBy: "tag",
-              categoryLinkSource: "tag",
-            }, 
-          },*/
+          mozartApi: {
+            specPath: "apis/mozart-api.yaml",
+            outputDir: "docs/api-reference",
+          },
         },
       },
     ],

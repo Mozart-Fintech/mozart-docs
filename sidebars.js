@@ -30,6 +30,19 @@ const sidebars = {
       items: require("./docs/petstore/sidebar.js")
     } 
   ] */
+  /* openApiSidebar: [
+    {
+      type: "category",
+      label: "Referencia de la API",
+      link: {
+        type: "generated-index",
+        title: "Referencia de la API",
+      slug: "/category/api-reference"
+      },
+      // @ts-ignore
+      items: require("./docs/api-reference/sidebar.js")
+    }
+  ] */
 
   // But you can create a sidebar manually
   /*

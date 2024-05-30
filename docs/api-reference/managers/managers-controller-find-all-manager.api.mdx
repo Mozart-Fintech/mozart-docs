@@ -1,0 +1,38 @@
+---
+id: managers-controller-find-all-manager
+title: "ManagersController_findAllManager"
+description: "ManagersController_findAllManager"
+sidebar_label: "ManagersController_findAllManager"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVN9r20AM/leMnm+EvZoxyH7SQdlYO/YQwlDOSnLN+c7VyaVZ8P8+dHYce2VQWN/OlvRJ+vRJJ4gNMYqL4aqCEq4x4I44vY9BOHpP/GvrQrX0frCAgQYZaxLiBOXqBAFrghJqFz6gEBhgum8dUwXlFn0iAy5ACfct8REMJLunGqE8gRwbDQxtvSGGrjMXLHx8Max0cM2LAAke/qeitYamJoZESe0VbbH10j+TZdfoEKAEMGBjEArZhk3jnc0DWtwldTg9TRI3d2RFR8M6TnF9itRaSylNHDcxesKQ28Dqa/BHKIVb6gxUKBlybjDnSGRGbdAJ1VPEJOzCDrqum1KzGnMPwGsD4sRrxKeZnr4PnCiCYgjuVFajEDUykW3ZyTHLDTPuK4kHClCu1krsnMDnaLgm2UcV/I4ybyh7KGFRD6ELDUDvdaLED73UJ5Xc6AR6kuf1DMPJXBNyztU/PkWuUaCELz9vYaR1L9KoysCFbcy0Dixdx9/IUiy/XcHf/d0QPzhLhcSir7doE3EyxdYFDNblt8W6QbcLqcBQFZ6w0lloJz3I60FmaFVmWkETk9SYexgUfyayuDCpOapi6X1x4XJW3SgMoUdZNB5dgM5Ay15tPc8rOPMMBs5Mrw3sYxK1nk4bTPSDfdfp7363dPaVS7jxk9070HF2eh7Qt5ocdG//5T0el+d4D+fjOa7Dgbi4rvWDnfpmpRrYE1bEuZc+ZmktNTKJerLvijKq9fNH1Q62yuJlqedCy+jnrQ3HCfabd9mhuFWtvoWx7izdbt113R/jABFM
+sidebar_class_name: "get api-method"
+info_path: api-reference/mozart-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>ManagersController_findAllManager</h1>
+
+<MethodEndpoint method={"get"} path={"/managers/findall"}></MethodEndpoint>
+
+
+
+ManagersController_findAllManager
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"minDate","required":false,"in":"query","schema":{"type":"number"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"maxDate","required":false,"in":"query","schema":{"type":"number"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"skip","required":false,"in":"query","schema":{"type":"number"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"take","required":false,"in":"query","schema":{"type":"number"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"default"} value={"default"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"success"} required={true} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean","readOnly":true}}></SchemaItem><SchemaItem collapsible={false} name={"data"} required={true} schemaName={"string[]"} qualifierMessage={undefined} schema={{"readOnly":true,"type":"array","items":{"type":"string"}}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"success\": true,\n  \"data\": [\n    \"string\"\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

@@ -1,0 +1,38 @@
+---
+id: leads-controller-find-active-leads-by-user-id
+title: "LeadsController_findActiveLeadsByUserId"
+description: "LeadsController_findActiveLeadsByUserId"
+sidebar_label: "LeadsController_findActiveLeadsByUserId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1rGzEQ/SvLnBWcXpdSiEMDKS0N+aAHx5Tx7sRWvCsp0qyTrdF/LyPt2o5J2h56kzTf773RFqwjj6ytuayhhK+EdTi3hr1tGvI/H7SpzyrWG0qWaX8XyF/WoMChx5aYfIByNlfg6amjwFNb91Bu01V7qqFk35GCyhomw2JC5xpdpZqTx2CNvIVqRS3KiXtHUIJdPFLFUsdLh6wpiLXL5fd+gb02S4gKHrRBU+l37WGt3YHBdO2CvBgY1/SGIaqDIWZj5bkC1tyI48Xb2Mjl3LYtmhpizGmCsybkCWp6wK7hfAyV106AgBLgv4EUuqqiEA4cF9Y2hAakF6y/m6bPvEQFNTJmwg4NaoxE77EHBZqpDW/gegzTWHtI/He4rgdwElaJjaUoKitR4gNVndfcQznbAqbsJ2zXZER3ca6OYPx3BbfEKyuid13CEHkFJUwacZtIGKawdF/0wr+WsEB+s1P92NyNUJPRf93iwFoigdCTBzUcLqxvkaGELz9uYYf3itkl7Qnp1/ud+vyCrWvocAdGDo6kv3/Oij8dFX4aFWjzYBOLAynf7C/0XJxdXcIxkDfkN7qigm3RosElFVI4qGJXLaiiwtahXppQoKmLBBUoEHxykg+DqrESVctczgZuMSFjMOGSeCn2lEmBusicFdk47QuhrUi8vWpzJ0imF564BrWRne58I7bM6QzGxt5jda5gZQOL63a7wEB3volRnp868n3meoNe40Jgm82jghVhTT6pck09lHCet/fkVhoS96ZLG3S8yVGNEWdVRY7/6Ds/0OnVnQhlMfywra0lxOOzrDU+Qwn3cC/fiE3YJDGm9y00aJYdLsU/pxUmsBNw9n/Ea3mmwcZPwPQHTX6cJofiVhT+CdQwTBZ8nMcYfwO/7DJF
+sidebar_class_name: "put api-method"
+info_path: api-reference/mozart-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>LeadsController_findActiveLeadsByUserId</h1>
+
+<MethodEndpoint method={"put"} path={"/leads/findactiveleadsbyuserid"}></MethodEndpoint>
+
+
+
+LeadsController_findActiveLeadsByUserId
+
+## Request
+
+<MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details mime"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-mime"}><h3 className={"openapi-markdown__details-summary-header-body"}>Body</h3><strong className={"openapi-schema__required"}>required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"userId"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"financierId"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"skip"} required={false} schemaName={"number"} qualifierMessage={undefined} schema={{"type":"number"}}></SchemaItem><SchemaItem collapsible={false} name={"take"} required={false} schemaName={"number"} qualifierMessage={undefined} schema={{"type":"number"}}></SchemaItem></ul></details></TabItem></MimeTabs><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"default"} value={"default"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"success"} required={true} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean","readOnly":true}}></SchemaItem><SchemaItem collapsible={false} name={"data"} required={true} schemaName={"string[]"} qualifierMessage={undefined} schema={{"readOnly":true,"type":"array","items":{"type":"string"}}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"success\": true,\n  \"data\": [\n    \"string\"\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

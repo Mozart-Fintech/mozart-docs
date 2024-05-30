@@ -1,0 +1,38 @@
+---
+id: campaigns-controller-update-campaign
+title: "CampaignsController_updateCampaign"
+description: "CampaignsController_updateCampaign"
+sidebar_label: "CampaignsController_updateCampaign"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlMFu2zAMhl/F4FlFsKsxDGiDDeuAbUWbYocsGBiZjdXakirRbbPA7z5QshMn64YddpNFUiL//5N34DwFZOPsZQUlzLH1aDY2zp3l4JqGwo/OV8g0RkCBx4AtMYUI5XKlINBjR5EvXLWFcpc+TaAKSg4dKdDOMlmWEHrfGJ2um91HZ2Uv6ppalBVvPUEJbn1PmuWeIM2xoShRU01yIgdjN9AruDMWraZw+Xp4HdBWX7ClV6O+dva1SK8mUyzl6pUCNtxI0u2RHnPXtmgr6PtcFb2zMXdc0R12Dedl1MF4GRxKgP8mSuy0phgniWvnGkKxKRBWX22zzT70CirkV488STwZfrxiqP+jENfD6EmJXgHjRvg4ICWlkXQXDG+hXO4A08Fn7B7ICkn9Sp0I9U84tsS1E3g9sq4Tn1xDCTM9Vs9yDcj94WnP7djMjYid9TxuafAhyUoYKIAaFh9caJGhhE/fFqBGRWtmn+ARG68Pr+L9C7a+oZHiEbNjeA+7E2YPmwOqE3iNvXPJzsGOz+4nBi7Ory7hVMcbCk9GU8GuaNHihoouUoiqyA2YtN7LVaCtioawEtNFrnzImwFb1IKtjOld5BaTUDa3uzesODhWZPWLiWVH3e2BZHrhmW/QWBmvC43EsplL2HcHCgY7VwpqF1miu90aI92Gpu9l+7GjsM0mP2EwuBaBlqteQU1YUUj4PdBWOs4P8WwhPUh600kvvz3KXo0V51qT57/mriZUXp0v5h/F1eH32LpKigI+y9PDZyjhO3yXf4JLgiQO0/4OGrSbDjeSnw8W1bETRQ4P/pjMNNoQQrudtPn2IiUUC4H7HahhnMx6v+r7/hcqKhi7
+sidebar_class_name: "patch api-method"
+info_path: api-reference/mozart-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>CampaignsController_updateCampaign</h1>
+
+<MethodEndpoint method={"patch"} path={"/campaigns/update"}></MethodEndpoint>
+
+
+
+CampaignsController_updateCampaign
+
+## Request
+
+<MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details mime"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-mime"}><h3 className={"openapi-markdown__details-summary-header-body"}>Body</h3><strong className={"openapi-schema__required"}>required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"id"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"financerId"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"brandName"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"phone"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem></ul></details></TabItem></MimeTabs><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"default"} value={"default"}><div></div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"success"} required={true} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean","readOnly":true}}></SchemaItem><SchemaItem collapsible={false} name={"data"} required={true} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","readOnly":true}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"success\": true,\n  \"data\": {}\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      
